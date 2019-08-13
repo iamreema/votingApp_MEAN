@@ -1,0 +1,25 @@
+.main {
+    background-image: url('../../assets/back2.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 200vh;
+    width: 100%;
+}
+
+.my-form {
+    background-color: #5e3b21c2;
+    padding: 50px;
+}
+
+label {
+    color : #fff;
+    font-weight: bold;
+}
+
+.table-dark {
+    color: #fff;
+    background-color: #5e3b21c2;
+    font-size: larger;
+}
+

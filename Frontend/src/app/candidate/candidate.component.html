@@ -1,0 +1,46 @@
+<div class="col-md-12 main">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6 mt-5 mx-auto">
+                <form class="my-form mx-auto" method="POST" [formGroup]="candidateForm" (ngSubmit)="addCandidate(candidateForm.value)">
+                <h3 class="form-header" style="text-align: center; color: #fff;">Add Candidate Details</h3>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Name" formControlName="name">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="party">Party</label>
+                        <input type="party" class="form-control" id="party" placeholder="Party" formControlName="party">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Save</button>
+                </form>
+            </div>
+        </div>
+
+        <table class="table table-striped table-dark mt-5">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Name</th>
+                <th scope="col">Party</th>
+                <th scope="col">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let candidate of allCandidates;let i = index">
+                <th scope="row">{{ i+1 }}</th>
+                <td>{{ candidate.name }}</td>
+                <td>{{ candidate.party }}</td>
+                <td>
+                    <a class="btn btn-success" routerLink = "/candidate/{{ candidate._id }}" >Edit</a>&nbsp;
+                    <button type="submit" class="btn btn-primary" (click)="deleteCandidateById(candidate._id)">Delete</button>
+                </td>
+              </tr>             
+            </tbody>
+          </table>
+    </div>
+</div>

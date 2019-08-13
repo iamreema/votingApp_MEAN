@@ -1,0 +1,15 @@
+.main {
+    background-image: url(../../assets/back5.jpg);
+    font-family: cursive;
+    font-size: larger;
+    /* background-size: cover; */
+    /* background-position: center center; */
+    background-repeat: repeat;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.ml-auto, .mx-auto {
+    margin-left: auto!important;
+    background-color: #f8587a3d;
+}

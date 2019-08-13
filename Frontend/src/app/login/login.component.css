@@ -1,0 +1,144 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400);
+
+body {
+  background-color: #aaa;
+  font-family: 'Open Sans', sans-serif;
+  height: 100%;
+}
+
+h2 { margin: 0; }
+
+.fakenavbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 40px;
+  width: 100%;
+  background-color: #214177;
+  color: #fff;
+}
+
+.fakenavbar h2 {
+  margin: 8px 15px;
+  font-size: 1.6em;
+}
+
+.fakefooter {
+  height: 25px;
+  margin-top: 25px;
+  width: 100%;
+  border-top: 1px solid #000;
+  background-color: #777;
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.jumbotron {
+  margin-top: 50px;
+  position: relative;
+  background: url('http://lorempixel.com/900/500/nature') bottom left no-repeat;
+  min-height: 400px;
+  background-size: 100%;
+  padding: 10px;
+}
+
+.jumbotron-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 0px 15px;
+  width: 25%;
+  height: 100%;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.66);
+  border-radius: 5px;
+}
+
+.jumbotron-content h1 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.75em;
+  margin-bottom: 0.5em;
+}
+
+.jumbotron p {
+  margin-top: 0;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.jumbotron-content label {
+  color: #fff;
+}
+
+.jumbotron .img-credit {
+  color: #bbb;
+  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
+  font-size: 10px;
+  margin: 5px;
+  padding: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.jumbotron .img-credit a, .jumbotron .img-credit a:hover {
+  color: #fff;
+}
+
+.jumbotron .btn {
+  padding: 5px 5%;
+  margin: 0 3%;
+}
+
+@media(min-width: 992px) {
+  .jumbotron .btn {
+    padding: 5px 10%;
+  }
+}
+
+@media(max-width: 991px) {
+  .jumbotron-content {
+    position: absolute;
+    height: 100%;
+  }
+
+  .jumbotron-lg-only {
+    display: none;
+  }
+}
+
+@media(max-width: 768px) {
+  .jumbotron {
+    background-size: 100% 100%;
+  }
+
+  .jumbotron-content {
+    top: 0;
+    height: 100%;
+    width: 37%;
+  }
+  
+  .jumbotron .btn {
+    font-size: 0.85em;
+    padding: 8px 5%;
+    max-width: 65px;
+  }
+}
+
+@media(min-device-width: 320px) and (max-device-width: 568px) {
+  .jumbotron {
+    background: #3667A6;
+    min-height: 275px;
+  }
+
+  .jumbotron-content {
+    width: 100%;
+    height: 100%;
+  }
+
+  .jumbotron .img-credit {
+    display: none;
+  }
+}

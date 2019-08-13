@@ -1,0 +1,23 @@
+.main{
+    background-image: url("/assets/back1.jpg");
+    overflow-x: hidden;
+}
+
+.image1 {
+    height: 200px;
+    background: #aaa;
+  }
+
+.image2 {
+    height: 380px;
+    width: 800px;
+    background: #aaa;
+}
+
+p {
+    font-weight: bold;
+}
+
+.nav-pills .nav-link {
+    font-weight: bold;
+}

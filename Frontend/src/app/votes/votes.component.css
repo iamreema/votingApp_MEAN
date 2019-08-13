@@ -1,0 +1,23 @@
+.main {
+    background-image: url('../../assets/back3.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.form-row>.col, .form-row>[class*=col-] {
+    padding-right: 5px;
+    padding-left: 5px;
+    color: White;
+    font-weight: bold;
+    font-size: x-large;
+    text-align: center;
+}
+
+.myForm {
+    background-color: rgba(0, 0, 0, 0.52);
+    width: 400px; 
+}

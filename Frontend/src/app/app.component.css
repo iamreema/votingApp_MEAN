@@ -1,0 +1,19 @@
+.bg-light {
+    background-color: rgba(0,0,0,.9)!important;
+}
+
+.jumbotron{
+    padding: 2%;
+}
+
+.navbar-light .navbar-brand {
+    color: #f8f9fa;
+    font-family: cursive;
+    font-size: xx-large;
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #6c757d;
+    font-size: larger;
+    font-family: sans-serif;
+}

@@ -1,0 +1,32 @@
+<div class="container"> 
+    <div class="jumbotron">
+        <div class="jumbotron-content">
+        <h1>Sign Up</h1>
+        <form name="user-info" [formGroup]="registerForm" (ngSubmit)="registerUser(registerForm.value)">
+            <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="name" name="name" class="form-control" placeholder="Name" formControlName="name">
+            </div>
+
+            <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" name="email" class="form-control" placeholder="Email" formControlName="email">
+            </div>
+
+            <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" name="password" class="form-control" placeholder="Password" formControlName="password">
+            </div>
+
+            <div class="form-group">
+            <label for="confirm_password">Confirm Password:</label>
+            <input type="confirm_password" name="confirm_password" class="form-control" placeholder="confirm_password" formControlName="confirm_password">
+            </div>
+            <button class="btn btn-primary btn-large" type="submit">Sign Up</button>
+            <a routerLink="/login" class="pull-right btn btn-default">Sign In</a>
+        </form>
+        </div>
+        <p class="img-credit">Image Dynamically Provided by <a href="http://lorempixel.com">LoremPixel</a></p>
+    </div>
+    </div>
+    

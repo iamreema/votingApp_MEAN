@@ -1,0 +1,17 @@
+<div class="main">
+    <!-- <div class="col-md-12 mt-5"> -->
+        <div class="row">
+            <div class="col-md-4 mt-5 mx-auto sub-menu">
+                <h3>Final Voting Result</h3><hr>
+                <label for="Seats">Party Wise Result</label>
+                <ul *ngFor="let voteResults of voteResult">
+                    <li>{{ voteResults[0] }} {{ voteResults[1] }}</li>
+                </ul><hr>
+                <label for="Seats">Winning Party</label>
+                <ul>
+                    <li>{{ winner }}  {{ largestValue }}</li>
+                </ul>    
+            </div>
+        </div>
+    <!-- </div> -->
+</div>

@@ -1,0 +1,15 @@
+.main {
+    /* background-image: url("../AngularJs/src/assets/bg1.jpg"); */
+    background-image: url("/assets/back4.jpg");
+    height: 590px;
+}
+
+.my-form {
+    background-color: #1919199e;
+    padding: 50px;
+}
+
+label {
+    color : #fff;
+    font-weight: bold;
+}

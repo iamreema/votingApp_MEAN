@@ -1,0 +1,24 @@
+<div class="col-md-12 main">
+    <div class="col-md-12">
+        <div class="row">
+            <div class="col-md-6 mt-5 mx-auto">
+                <form class="my-form mx-auto" method="POST" [formGroup]="editCandidateForm" (ngSubmit)="updateCandidate(editCandidateForm.value)">
+                <h3 class="form-header" style="text-align: center; color: #fff;">Update Candidate Details</h3>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="name">Name</label>
+                        <input type="name" class="form-control" id="name" placeholder="Name" formControlName="name" value="{{ candidateData.name }}">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-md-12">
+                        <label for="party">Party</label>
+                        <input type="party" class="form-control" id="party" placeholder="Party" formControlName="party" value="{{ candidateData.party }}">
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Update</button>
+                </form>
+            </div>
+        </div>        
+    </div>
+</div>
